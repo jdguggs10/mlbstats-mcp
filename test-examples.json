@@ -1,0 +1,88 @@
+{
+  "examples": [
+    {
+      "name": "Get All Teams",
+      "description": "Retrieve information about all MLB teams",
+      "request": {
+        "command": "getTeamInfo",
+        "params": {
+          "queryParams": {
+            "season": "2024",
+            "sportId": "1"
+          }
+        }
+      }
+    },
+    {
+      "name": "Get Yankees Roster",
+      "description": "Get the New York Yankees roster",
+      "request": {
+        "command": "getRoster",
+        "params": {
+          "pathParams": {
+            "teamId": "147"
+          },
+          "queryParams": {
+            "season": "2024"
+          }
+        }
+      }
+    },
+    {
+      "name": "Get Aaron Judge Stats",
+      "description": "Get Aaron Judge's hitting stats for 2024 season",
+      "request": {
+        "command": "getPlayerStats",
+        "params": {
+          "pathParams": {
+            "playerId": "592450"
+          },
+          "queryParams": {
+            "stats": "season",
+            "group": "hitting",
+            "season": "2024"
+          }
+        }
+      }
+    },
+    {
+      "name": "Get Today's Schedule",
+      "description": "Get today's MLB schedule",
+      "request": {
+        "command": "getSchedule",
+        "params": {
+          "queryParams": {
+            "sportId": "1",
+            "date": "2024-07-04"
+          }
+        }
+      }
+    },
+    {
+      "name": "Get AL East Standings",
+      "description": "Get American League East standings",
+      "request": {
+        "command": "getStandings",
+        "params": {
+          "queryParams": {
+            "leagueId": "103",
+            "divisionId": "201",
+            "season": "2024"
+          }
+        }
+      }
+    },
+    {
+      "name": "Get Player Info",
+      "description": "Get detailed player information",
+      "request": {
+        "command": "getPlayerInfo",
+        "params": {
+          "pathParams": {
+            "playerId": "592450"
+          }
+        }
+      }
+    }
+  ]
+}

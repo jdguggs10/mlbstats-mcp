@@ -1,0 +1,21 @@
+{
+  "name": "mlbstats-mcp",
+  "version": "1.0.0",
+  "description": "MLB Stats API MCP Server - Cloudflare Worker for accessing MLB data",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node tests/run-all-tests.js",
+    "test:quick": "node tests/quick-test.js",
+    "test:endpoints": "node tests/run-all-tests.js",
+    "test:local": "WORKER_URL=http://localhost:8787 node tests/quick-test.js"
+  },
+  "keywords": ["mlb", "stats", "api", "mcp", "cloudflare", "worker"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
